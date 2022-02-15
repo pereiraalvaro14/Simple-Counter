@@ -6,7 +6,14 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import SimpleCounter from "./component/SimpleCounter.jsx";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let secondsVariable = 0;
+setInterval(() => {
+	ReactDOM.render(
+		<SimpleCounter seconds={secondsVariable} />,
+		document.querySelector("#app")
+	);
+	secondsVariable = secondsVariable + 1;
+}, 1000);

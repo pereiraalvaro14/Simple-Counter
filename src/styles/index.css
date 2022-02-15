@@ -1,12 +1,19 @@
-
-/* 
-
-    You can write your own styles here...
+.container-alv {
+    background-color: black;
+    padding: 25px 0;
+    width: 50%;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.white-alv{
+    color:white;
+    text-align: center;
+    padding-left: 170px;
+}
+
+.caja {
+    border: 3px solid purple;  
+    border-radius: 5px; 
+    margin: 0 3px;
+    padding: 10px 0;
+}
